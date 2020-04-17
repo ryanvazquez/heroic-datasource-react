@@ -1,6 +1,8 @@
-import { PanelPlugin } from '@grafana/data';
-import { SimpleOptions, defaults } from './types';
-import { SimplePanel } from './SimplePanel';
-import { SimpleEditor } from './SimpleEditor';
+import { DataSourcePlugin } from '@grafana/data';
+import { HeroicDatasource } from './datasource';
+import { HeroicQueryEditor } from './components/HeroicQueryEditor';
+import { HeroicConfigEditor } from './configuration/HeroicConfigEditor';
 
-export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setDefaults(defaults).setEditor(SimpleEditor);
+export const plugin = new DataSourcePlugin(HeroicDatasource)
+  .setQueryEditor(HeroicQueryEditor)
+  .setConfigEditor(HeroicConfigEditor);

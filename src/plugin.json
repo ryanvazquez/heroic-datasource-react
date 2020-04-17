@@ -1,29 +1,36 @@
 {
-  "type": "panel",
-  "name": "Simple Panel",
-  "id": "myorgid-simple-panel",
-
+  "type": "datasource",
+  "name": "Heroic Datasource React",
+  "id": "heroic-datasource-react",
   "info": {
-    "description": "Simple React Panel",
+    "description": "Datasource for Heroic TSDB",
     "author": {
-      "name": "Your Name"
+      "name": "Ryan Vazquez"
     },
-    "keywords": ["Simple"],
+    "keywords": [
+      "Simple"
+    ],
     "logos": {
       "small": "img/logo.svg",
       "large": "img/logo.svg"
     },
     "links": [
-      {"name": "Website", "url": "https://github.com/grafana/simple-react-panel"},
-      {"name": "License", "url": "https://github.com/grafana/simple-react-panel/blob/master/LICENSE"}
+      {
+        "name": "Website",
+        "url": "https://github.com/grafana/simple-react-panel"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/grafana/simple-react-panel/blob/master/LICENSE"
+      }
     ],
     "screenshots": [],
     "version": "%VERSION%",
     "updated": "%TODAY%"
   },
-
   "dependencies": {
     "grafanaVersion": "6.3.x",
     "plugins": []
-  }
+  },
+  "hasQueryHelp": true
 }

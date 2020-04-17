@@ -20,7 +20,17 @@
   },
   "devDependencies": {
     "@grafana/data": "next",
+    "@grafana/runtime": "next",
     "@grafana/toolkit": "next",
     "@grafana/ui": "next"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/lru-cache": "^5.1.0",
+    "@types/shortid": "^0.0.29",
+    "lodash": "^4.17.15",
+    "lru-cache": "^5.1.1",
+    "react-use": "^14.0.0",
+    "shortid": "^2.2.15"
   }
 }
